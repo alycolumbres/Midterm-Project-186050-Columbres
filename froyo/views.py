@@ -1,49 +1,50 @@
-from django.views.generic import ListView, DetailView, UpdateView, CreateView
+from django.shortcuts import render
+from django.views.generic import TemplateView
 
 # Create your views here.
-class IngredientsListView(ListView):
+class IngredientsListView(TemplateView):
 	template_name = 'ingredients_list.html'
 
 
-class IngredientsDetailView(DetailView):
+class IngredientsDetailView(TemplateView):
 	template_name = 'ingredients_detail.html'
 
 
-class IngredientsUpdateView(UpdateView):
+class IngredientsUpdateView(TemplateView):
 	template_name = 'ingredients_update_form.html'
 
 
-class IngredientsCreateView(CreateView):
+class IngredientsCreateView(TemplateView):
 	template_name = 'ingredients_create_form.html'
 
 
-class RecipesListView(ListView):
+class RecipesListView(TemplateView):
 	template_name = 'recipes_list.html'
 
 
-class RecipesDetailView(DetailView):
+class RecipesDetailView(TemplateView):
 	template_name = 'recipes_detail.html'
 
 
-class RecipesUpdateView(UpdateView):
+class RecipesUpdateView(TemplateView):
 	template_name = 'recipes_update_form.html'
 
 
-class RecipesCreateView(CreateView):
+class RecipesCreateView(TemplateView):
 	template_name = 'recipes_create_form.html'
 
 
-class OrdersListView(ListView):
+class OrdersListView(TemplateView):
 	template_name = 'orders_list.html'
 
 
-class OrdersDetailView(DetailView):
+class OrdersDetailView(TemplateView):
 	template_name = 'orders_detail.html'
 
 
-class OrdersUpdateView(UpdateView):
+class OrdersUpdateView(TemplateView):
 	template_name = 'orders_update_form.html'
 
 
-class OrdersCreateView(CreateView):
+class OrdersCreateView(TemplateView):
 	template_name = 'orders_create_form.html'
