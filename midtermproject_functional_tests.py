@@ -105,7 +105,8 @@ class NewVisitorTest(unittest.TestCase):
 			self.browser.getCurrentUrl()
 		)
 
-	self.fail('Finish the test!')
+
+		self.fail('Finish the test!')
 
 if __name__ == '__main__':
 	unittest.main(warnings = 'ignore')

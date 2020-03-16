@@ -1,3 +1,9 @@
 .DS_Store
 myenv
 */__pycache__
+dp.sqlite3
+*/__pycache__
+geckodriver.log
+*/__pycache__/
+froyo/migrations/__pycache__/
+db.sqlite3
